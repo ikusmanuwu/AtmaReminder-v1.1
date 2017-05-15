@@ -18,10 +18,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnSchedule"
-        android:layout_marginTop="95dp"
         android:layout_below="@+id/txtPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="140dp" />
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="125dp" />
 
     <Button
         android:text="Set Reminder"
@@ -31,6 +32,7 @@
         android:layout_marginTop="27dp"
         android:layout_below="@+id/txtPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="145dp" />
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="125dp" />
 
 </LinearLayout>
