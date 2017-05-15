@@ -39,7 +39,7 @@ public class LoginActivity extends Activity {
 
 
 
-        lg = (Button) findViewById(R.id.btnLog);
+        lg = (Button) findViewById(R.id.btnLogin);
     }
 
     public void onClick(View v){
