@@ -18,22 +18,30 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         lg = (Button)findViewById(R.id.btnSchedule);
         set = (Button)findViewById(R.id.btnReminder);
-    }
-
-    public void onClick(View v){
-        lg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ScheduleActivity.class);
-                startActivity(intent);
-            }
-        });
         set.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ReminderActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ReminderActivity.class);
                 startActivity(intent);
             }
         });
     }
+
+//    public void onClick(View v){
+//        lg.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(v.getContext(), ScheduleActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        set.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), ReminderActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//    }
+
 }

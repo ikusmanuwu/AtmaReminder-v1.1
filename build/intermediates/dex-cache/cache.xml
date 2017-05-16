@@ -3,156 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="E:\ANDROIDSTUDIO\Projek\AtmaReminder-v1.1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f036920050937d931e363978ffa90b15dbde49a5\classes.dex" />
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="E:\ANDROIDSTUDIO\Projek\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7a3f2d54ef238e480fdbb664691581b190d6a66d\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="E:\ANDROIDSTUDIO\Projek\AtmaReminder-v1.1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.2"
-        sha1="5bf3655045230ac7d3c03b41a95ead385596cf43">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cddf578338ed2392953bb0c818ef363e26bccd53\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0c23aa3498ccf48fbe7cd6d07165fb6ff611b6cb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_161813dc337a07bbf498accc4cfdce7d00cf5c5b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_319313078066f188266a607cfa3d5b21e8547a71\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f065715d33b2dde3db80a036b84c93b92f4e134c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_a75783a32d3d47ccec7b8f80190739d1938c9526\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\PAM 2016\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_7ab379812a50447c02a1118d68961c515995c774\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_4391a1f58dfb1f724c279035a9a54278f95ffa2c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_a0cc961b578a95c24941bb73e6ae9918836b97fa\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_43d9bd2c7cf5e0e4a6d1baff4afb169c1d5f8787\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_9a4b7ab790c7bbaad6ea6d40ec02ac06d4c19431\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_798def9dc4cfe6b89c12fbe04aefecbe0ef484e5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_7e80c83a33528c1e75b3c6216ebee829f136846f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d5738acec73a0a2fc9e484c414d98fa5e89e6ecd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="aded66101d1dd04b9c9de60bb5de73926d5fe6de">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_35cd779ff6a9c5ba7c7d0d75ef4f67742de88917\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="E:\KULIAH\Semester 5\PAM\AtmaReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_ab341985b1d65d04c4d9aad7a080d0a0d6d79e12\classes.dex" />
+        revision="25.0.0"
+        sha1="57eca88bf29368baa6632431cfbfa83a3842d75b">
+        <dex dex="E:\ANDROIDSTUDIO\Projek\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a0ab1d498bd3a23c6ba5677d23c0cfb003570dd3\classes.dex" />
     </item>
 
 </items>
