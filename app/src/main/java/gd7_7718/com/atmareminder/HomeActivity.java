@@ -25,6 +25,13 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        lg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), JadwalActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 //    public void onClick(View v){
@@ -38,7 +45,7 @@ public class HomeActivity extends AppCompatActivity {
 //        set.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), ReminderActivity.class);
+//                Intent intent m = new Intent(getApplicationContext(), ReminderActivity.class);
 //                startActivity(intent);
 //            }
 //        });
