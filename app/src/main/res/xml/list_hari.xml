@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <hari>
-    <name value = "Senin"/>
+    <name value = "Senin" />
     <name value = "Selasa"/>
     <name value = "Rabu"/>
     <name value = "Kamis"/>
     <name value = "Jumat"/>
+    <name value = "Sabtu"/>
+    <name value = "Minggu"/>
 </hari>

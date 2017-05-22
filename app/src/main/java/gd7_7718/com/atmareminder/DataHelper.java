@@ -21,10 +21,10 @@ public class DataHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
 //        db.execSQL("create table "+tblJadwal+"("+jID+" INTEGER primary key,"+jHari+" text,"+jMakul+" text,"+jRuangan+" text,"+jJamMulai+" text,"+jJamSelesai+" text);");
-        String sql = "create table jadwal(no integer primary key, hari text null, makul text null, ruangan text null, jammulai text null, jamselesai text null);";
+        String sql = "create table jadwal(no integer primary key, hari text null, jammulai text null, jamselesai text null, makul text null, ruangan text null,idhari integer);";
         Log.d("Data", "onCreate: " + sql);
         db.execSQL(sql);
-       // sql = "INSERT INTO jadwal (no, hari, jammulai, jamselesai) VALUES ('1', 'Selasa', '15.30', '18.00');";
+        sql = "INSERT INTO jadwal (no, hari, jammulai, jamselesai,makul,ruangan) VALUES ('1', 'Selasa', '15.30', '18.00','Techno','3421','3');";
         db.execSQL(sql);
     }
     @Override

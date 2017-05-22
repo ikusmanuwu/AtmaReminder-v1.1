@@ -37,24 +37,37 @@ public class BuatJadwal extends AppCompatActivity {
         text2 = (Spinner) findViewById(R.id.editText2);
         text3 = (EditText) findViewById(R.id.editText3);
         text4 = (EditText) findViewById(R.id.editText4);
-        text5 = (EditText) findViewById(R.id.editText6);
-        text6 = (EditText) findViewById(R.id.editText12);
+        text5 = (EditText) findViewById(R.id.editText5);
+        text6 = (EditText) findViewById(R.id.editText6);
         ton1 = (Button) findViewById(R.id.button1);
         ton2 = (Button) findViewById(R.id.button2);
+
+
 
         ton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
+                long idhaaa;
+                if(text2.getSelectedItemId()==6  )
+                {
+                    idhaaa = 1;
+                }
+                else
+                {
+                    idhaaa = text2.getSelectedItemId()+2;
+                }
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
-                db.execSQL("insert into jadwal(no, hari, makul, ruangan, jammulai, jamselesai) values('" +
+                db.execSQL("insert into jadwal(no, hari, jammulai, jamselesai, makul, ruangan,idhari) values('" +
                         text1.getText().toString() + "','" +
                         text2.getSelectedItem().toString() + "','" +
                         text3.getText().toString() + "','" +
                         text4.getText().toString() + "','" +
                         text5.getText().toString() + "','" +
-                        text6.getText().toString() + "')");
+                        text6.getText().toString() + "','" +
+                        idhaaa + "')");
                 Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(), " Select ID Hari :"+text2.getSelectedItemId(), Toast.LENGTH_SHORT).show();
                 JadwalActivity.ma.RefreshList();
                 finish();
             }
@@ -92,5 +105,6 @@ public class BuatJadwal extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, dataHari);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerHari.setAdapter(adapter);
+//        Toast.makeText(getApplicationContext(), " Select ID Hari :"+text2.getSelectedItemId(), Toast.LENGTH_SHORT).show();
     }
 }
