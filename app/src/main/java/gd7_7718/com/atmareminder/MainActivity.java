@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         else{
             if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin"))
             {
-                Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/MapsActivity.class);
+                Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/HomeActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"login berhasil", Toast.LENGTH_LONG).show();
 
