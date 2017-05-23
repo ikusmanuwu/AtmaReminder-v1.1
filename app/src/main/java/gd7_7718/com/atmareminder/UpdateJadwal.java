@@ -21,10 +21,10 @@ public class UpdateJadwal extends AppCompatActivity {
         setContentView(R.layout.activity_update_jadwal);
 
         dbHelper = new DataHelper(this);
-        text1 = (EditText) findViewById(R.id.editText1);
-        text2 = (EditText) findViewById(R.id.editText2);
-        text3 = (EditText) findViewById(R.id.editText3);
-        text4 = (EditText) findViewById(R.id.editText4);
+        text1 = (EditText) findViewById(R.id.txtNama);
+        text2 = (EditText) findViewById(R.id.txtUser);
+        text3 = (EditText) findViewById(R.id.txtPass);
+        text4 = (EditText) findViewById(R.id.txtUniv);
         text5 = (EditText) findViewById(R.id.editText5);
         text6 = (EditText) findViewById(R.id.editText6);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
@@ -42,7 +42,7 @@ public class UpdateJadwal extends AppCompatActivity {
             text6.setText(cursor.getString(5).toString());
         }
         ton1 = (Button) findViewById(R.id.button1);
-        ton2 = (Button) findViewById(R.id.button2);
+        ton2 = (Button) findViewById(R.id.btnKembali);
         // daftarkan even onClick pada btnSimpan
         ton1.setOnClickListener(new View.OnClickListener() {
             @Override

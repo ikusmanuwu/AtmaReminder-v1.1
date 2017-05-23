@@ -28,19 +28,19 @@ public class BuatJadwal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buat_jadwal);
-        spinnerHari = (Spinner)findViewById(R.id.editText2);
+        spinnerHari = (Spinner)findViewById(R.id.txtUser);
         readXML();
         setForm();
 
         dbHelper = new DataHelper(this);
-        text1 = (EditText) findViewById(R.id.editText1);
-        text2 = (Spinner) findViewById(R.id.editText2);
-        text3 = (EditText) findViewById(R.id.editText3);
-        text4 = (EditText) findViewById(R.id.editText4);
+        text1 = (EditText) findViewById(R.id.txtNama);
+        text2 = (Spinner) findViewById(R.id.txtUser);
+        text3 = (EditText) findViewById(R.id.txtPass);
+        text4 = (EditText) findViewById(R.id.txtUniv);
         text5 = (EditText) findViewById(R.id.editText5);
         text6 = (EditText) findViewById(R.id.editText6);
         ton1 = (Button) findViewById(R.id.button1);
-        ton2 = (Button) findViewById(R.id.button2);
+        ton2 = (Button) findViewById(R.id.btnKembali);
 
 
 
@@ -101,7 +101,7 @@ public class BuatJadwal extends AppCompatActivity {
     }
 
     private void setForm() {
-        spinnerHari = (Spinner)findViewById(R.id.editText2);
+        spinnerHari = (Spinner)findViewById(R.id.txtUser);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, dataHari);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerHari.setAdapter(adapter);

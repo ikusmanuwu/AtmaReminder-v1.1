@@ -28,7 +28,7 @@ public class JadwalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jadwal);
 
-        Button btn=(Button)findViewById(R.id.button2);
+        Button btn=(Button)findViewById(R.id.btnKembali);
 
         btn.setOnClickListener(new View.OnClickListener() {
 

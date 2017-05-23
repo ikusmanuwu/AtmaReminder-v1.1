@@ -1,24 +1,51 @@
 package gd7_7718.com.atmareminder;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.Calendar;
-
 public class MainActivity extends AppCompatActivity {
     private String username;
     private String password;
+    private SharedPreferences sp;
+    private final String name = "myShared";
+    public static final int mode = Activity.MODE_PRIVATE;
+    private String user;
+    private String pass;
+    private String nama = "";
+    private String universitas = "";
+    private Button ton1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        loadPreferences();
+
+        ton1 = (Button) findViewById(R.id.btnRegister);
+        ton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    private void loadPreferences() {
+        sp = getSharedPreferences(name,mode);
+        if(sp!=null) {
+            user = sp.getString("username","");
+            pass = sp.getString("password","");
+        }
     }
 
     public void Login (View v) {
@@ -31,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Username atau password tidak boleh kosong", Toast.LENGTH_LONG).show();
         }
         else{
-            if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin"))
+            //if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin"))
+            if(username.equals(sp.getString("username","")) && password.equals(sp.getString("password","")))
             {
                 Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/HomeActivity.class);
                 startActivity(intent);
