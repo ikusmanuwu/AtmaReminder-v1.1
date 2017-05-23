@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="support-media-compat-24.2.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/edae5701a859fd5b63dffad038d1a19a1cfa6320/output/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.android/build-cache/edae5701a859fd5b63dffad038d1a19a1cfa6320/output/jars/libs/internal_impl-24.2.1.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/edae5701a859fd5b63dffad038d1a19a1cfa6320/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e9fbec18a8ad725c3c82a568c20977a1738ad4ab/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e9fbec18a8ad725c3c82a568c20977a1738ad4ab/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e9fbec18a8ad725c3c82a568c20977a1738ad4ab/output/jars/libs/internal_impl-24.2.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://C:/Android/sdk/extras/android/m2repository/com/android/support/support-media-compat/24.2.1/support-media-compat-24.2.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../PAM 2016/sdk/extras/android/m2repository/com/android/support/support-media-compat/24.2.1/support-media-compat-24.2.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

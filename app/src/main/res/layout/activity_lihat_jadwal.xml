@@ -45,6 +45,24 @@
         android:layout_marginTop="20dp"
         android:text="TextView" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
 
 
 
@@ -62,10 +80,29 @@
         android:id="@+id/TextView04"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Jam Mulai"
         android:layout_alignBaseline="@+id/textView3"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/TextView02"
-        android:text="Jam Mulai" />
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/TextView05"
+        android:text="Ruangan" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/TextView04"
+        android:text="Mata Kuliah" />
+
 
     <TextView
         android:id="@+id/TextView02"
@@ -92,7 +129,7 @@
         android:text="Kembali"
         style="?android:attr/borderlessButtonStyle"
         android:drawableLeft="@drawable/ic_arrow"
-        android:layout_below="@+id/TextView03"
+        android:layout_below="@+id/TextView06"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>

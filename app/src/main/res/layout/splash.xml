@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:id="@+id/imageView"
-        android:src="@drawable/atmaremindxcver"
+        android:src="@drawable/campusreminder"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp" />

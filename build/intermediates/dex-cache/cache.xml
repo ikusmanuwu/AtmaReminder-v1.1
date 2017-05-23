@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="165c1e5df982bac05aed14359d8ae2a8f7dd0d13">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_085a4ab330d5feb22cf12ffde18558fbc3844899\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2f4cf0e5927760545c51715494f7caa075d5e9c2\classes.dex" />
+    </item>
+
+</items>

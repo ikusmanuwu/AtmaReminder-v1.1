@@ -5,14 +5,19 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Random;
@@ -22,7 +27,8 @@ import java.util.Random;
  */
 
 public class ReminderActivity extends AppCompatActivity {
-
+    protected Cursor cursor;
+    DataHelper dbHelper;
     AlarmManager alarmManager;
     private PendingIntent pending_intent;
 
@@ -67,6 +73,19 @@ public class ReminderActivity extends AppCompatActivity {
         alarmTimePicker = (TimePicker) findViewById(R.id.alarmTimePicker);
 
 
+        ///////////////////getDatabase/////////////////////////////////
+
+        dbHelper = new DataHelper(this);
+       /*
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        cursor = db.rawQuery("SELECT TOP1 idhari FROM jadwal WHERE idhari = '" +
+                Calendar.DAY_OF_WEEK + "'",null);
+        cursor.moveToFirst();
+        */
+
+
+        ///////////////////////////////////////////////////////////////
+
 
         Button start_alarm= (Button) findViewById(R.id.start_alarm);
         start_alarm.setOnClickListener(new View.OnClickListener() {
@@ -80,20 +99,23 @@ public class ReminderActivity extends AppCompatActivity {
 
                 final int hour = alarmTimePicker.getCurrentHour();
                 final int minute = alarmTimePicker.getCurrentMinute();;
-
                 Log.e("MyActivity", "In the receiver with " + hour + " and " + minute);
                 setAlarmText("You clicked a " + hour + " and " + minute);
 
+                if(Calendar.DAY_OF_WEEK==1)
+                {
+
+                }
 
                 calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getCurrentHour());
                 calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute());
+//                calendar.set(Calendar.DAY_OF_WEEK,1);
 
                 myIntent.putExtra("extra", "yes");
                 pending_intent = PendingIntent.getBroadcast(ReminderActivity.this, 0, myIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
                 alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pending_intent);
-
-
+//                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),AlarmManager.INTERVAL_DAY,pending_intent);
                 // now you should change the set Alarm text so it says something nice
 
 

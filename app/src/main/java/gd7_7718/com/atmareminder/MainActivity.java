@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity {
     private String username;
     private String password;
@@ -31,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
         else{
             if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin"))
             {
-                Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/MapsActivity.class);
+                Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/HomeActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"login berhasil", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(), "Sundays value "+ Calendar.SATURDAY, Toast.LENGTH_SHORT).show();
 
             }
             else
