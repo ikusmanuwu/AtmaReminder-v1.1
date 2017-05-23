@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
 
     public void Login (View v) {
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         else{
             if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin"))
             {
-                Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/MapsActivity.class);
+                Intent intent = new Intent(v.getContext(), HomeActivity.class/*MapsActivity.class*/);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"login berhasil", Toast.LENGTH_LONG).show();
 //                Toast.makeText(getApplicationContext(), "Sundays value "+ Calendar.SATURDAY, Toast.LENGTH_SHORT).show();
