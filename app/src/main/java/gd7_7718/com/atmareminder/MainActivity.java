@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         else{
             if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin"))
             {
-                Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/HomeActivity.class);
+                Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/MapsActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"login berhasil", Toast.LENGTH_LONG).show();
 //                Toast.makeText(getApplicationContext(), "Sundays value "+ Calendar.SATURDAY, Toast.LENGTH_SHORT).show();

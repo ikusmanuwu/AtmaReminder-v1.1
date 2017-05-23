@@ -29,13 +29,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.sql.Time;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private LocationManager locationManager;
-    private LocationListener locationListener;
-    private LatLng point;
+    private Location point;
     private BroadcastReceiver broadcastReceiver;
+    private Location kampus3;
 
     @Override
     protected void onResume() {
@@ -44,7 +45,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             broadcastReceiver=new BroadcastReceiver() {
                 @Override
                 public void onReceive(Context context, Intent intent) {
-                    point = (LatLng) intent.getExtras().get("point");
+                    point = (Location) intent.getExtras().get("point");
                     //Toast.makeText(MapsActivity.this, point.latitude+","+point.longitude, Toast.LENGTH_SHORT).show();
                 }
             };
@@ -54,7 +55,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        point=new LatLng(0,0);
+        kampus3=new Location("");
+        kampus3.setLatitude(-7.778941);
+        kampus3.setLongitude(110.415053);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -86,12 +89,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng current = new LatLng(point.latitude, point.longitude);
+        LatLng current = new LatLng(-7.778941, 110.415053);
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(current));
 
         if ((ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED))
-            mMap.setMyLocationEnabled(true);
+            mMap.setMyLocationEnabled(false);
 
     }
 
@@ -127,7 +130,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    public LatLng getCurrentLocation(){
-        return point;
+    public float getEstimation(){
+        float distance=point.distanceTo(kampus3);
+        return distance/(40000/60);
     }
 }
