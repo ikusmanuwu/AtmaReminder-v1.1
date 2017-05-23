@@ -8,4 +8,3 @@
     tools:context="gd7_7718.com.atmareminder.MapsActivity"
     tools:layout="@layout/activity_maps"
     class="com.google.android.gms.maps.SupportMapFragment"/>
-

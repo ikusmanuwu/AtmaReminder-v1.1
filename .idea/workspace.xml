@@ -12,7 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d1cc09e-795b-4f06-9818-721dcf1e2aaa" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-16-11-23-22-891.rawproto" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-16-11-23-44-439.rawproto" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-16-11-24-30-143.rawproto" afterPath="" />
@@ -44,6 +47,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-22-19-35-36-075.rawproto" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-22-19-35-58-142.rawproto" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="" />
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
@@ -52,6 +59,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/MapsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/MapsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
+=======
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_2_1.xml" />
@@ -82,6 +99,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_buat_jadwal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_buat_jadwal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+<<<<<<< HEAD
+=======
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" />
@@ -89,6 +108,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/MapsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/MapsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
     </list>
     <ignored path="AtmaReminder.iws" />
@@ -138,10 +158,13 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
             <state relative-caret-position="-68">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
 =======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
             <state relative-caret-position="538">
               <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
               <folding />
@@ -160,6 +183,13 @@
                 <element signature="e#5198#5199#0" expanded="true" />
                 <element signature="e#5226#5227#0" expanded="true" />
               </folding>
+<<<<<<< HEAD
+=======
+            <state relative-caret-position="-68">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
             </state>
           </provider>
@@ -169,6 +199,8 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
       <file leaf-file-name="DataHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/DataHelper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -176,6 +208,7 @@
               <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
               <folding />
 =======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
       <file leaf-file-name="GPSService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/GPSService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -186,12 +219,24 @@
                 <element signature="e#651#652#0" expanded="true" />
                 <element signature="e#678#679#0" expanded="true" />
               </folding>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="DataHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/DataHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
+              <folding />
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
       <file leaf-file-name="UpdateJadwal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/UpdateJadwal.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -199,6 +244,7 @@
               <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="24" />
               <folding />
 =======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -207,6 +253,16 @@
               <folding>
                 <element signature="e#2822#2847#0" expanded="true" />
               </folding>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="UpdateJadwal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/UpdateJadwal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="24" />
+              <folding />
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
             </state>
           </provider>
@@ -216,11 +272,19 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buat_jadwal.xml">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+            <state relative-caret-position="391">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+=======
+            <state relative-caret-position="231">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+=======
             <state relative-caret-position="231">
               <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
 =======
             <state relative-caret-position="391">
               <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
               <folding />
             </state>
@@ -234,12 +298,15 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/AlarmReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
             <state relative-caret-position="255">
               <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
 =======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
             <state relative-caret-position="102">
               <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
               <folding />
@@ -256,6 +323,15 @@
             <state relative-caret-position="220">
               <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
               <folding />
+<<<<<<< HEAD
+=======
+            <state relative-caret-position="255">
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
             </state>
           </provider>
@@ -2133,6 +2209,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/GPSService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/MapsActivity.java" />
+=======
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
         <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/MapsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
@@ -2150,11 +2234,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/BuatJadwal.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/UpdateJadwal.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/ReminderActivity.java" />
+<<<<<<< HEAD
+=======
 =======
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/GPSService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/MapsActivity.java" />
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
       </list>
     </option>
@@ -2212,6 +2299,11 @@
       <pane id="Scratches" />
       <pane id="AndroidView">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <subPane />
+=======
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
         <subPane>
           <PATH>
             <PATH_ELEMENT>
@@ -2280,8 +2372,11 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+<<<<<<< HEAD
+=======
 =======
         <subPane />
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
       </pane>
       <pane id="ProjectPane" />
@@ -2295,11 +2390,19 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyGPSLocation" />
+    <property name="device.picker.selection" value="Mega_6.3_API_19" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="device.picker.selection" value="Nexus_5X_API_23_-Yonglex" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="Nexus_5X_API_23_-Yonglex" />
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyGPSLocation" />
     <property name="device.picker.selection" value="Mega_6.3_API_19" />
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
     <property name="VectorAssetImportPath" value="E:\" />
   </component>
@@ -2703,6 +2806,8 @@
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23322147" sideWeight="0.48184568" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2719,6 +2824,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 =======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63897765" sideWeight="0.49546143" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2735,6 +2841,25 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43769968" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23322147" sideWeight="0.48184568" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23322147" sideWeight="0.5181543" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.045302015" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15100671" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16369711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2990,14 +3115,22 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/Entity/JadwalKuliahEntity.java">
+=======
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/campusreminder.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+<<<<<<< HEAD
+=======
 =======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/Entity/JadwalKuliahEntity.java">
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -3168,6 +3301,8 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
         <state relative-caret-position="187">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
@@ -3189,6 +3324,7 @@
         <state relative-caret-position="185">
           <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
 =======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
         <state relative-caret-position="459">
           <caret line="33" column="99" selection-start-line="33" selection-start-column="99" selection-end-line="33" selection-end-column="99" />
           <folding>
@@ -3220,6 +3356,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+<<<<<<< HEAD
+=======
+        <state relative-caret-position="187">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/AlarmReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/BuatJadwal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
           <folding />
         </state>
@@ -3228,22 +3388,33 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/DataHelper.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="391">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+=======
+        <state relative-caret-position="321">
+          <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
+=======
         <state relative-caret-position="321">
           <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
 =======
         <state relative-caret-position="391">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/UpdateJadwal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="24" />
 =======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/Entity/GPSService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -3256,6 +3427,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/UpdateJadwal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="13" selection-end-column="24" />
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
           <folding />
         </state>
@@ -3264,6 +3443,14 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gd7_7718/com/atmareminder/ReminderActivity.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="150">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="e#2822#2847#0" expanded="true" />
+=======
+=======
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
         <state relative-caret-position="153">
           <caret line="83" column="10" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
           <folding>
@@ -3271,11 +3458,14 @@
             <element signature="e#4268#4269#0" expanded="true" />
             <element signature="e#4378#4997#0" expanded="true" />
             <element signature="e#4996#4997#0" expanded="true" />
+<<<<<<< HEAD
+=======
 =======
         <state relative-caret-position="150">
           <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
           <folding>
             <element signature="e#2822#2847#0" expanded="true" />
+>>>>>>> 7cd97f0bf244bb3d40db106c9e641461b01b5309
 >>>>>>> master
           </folding>
         </state>

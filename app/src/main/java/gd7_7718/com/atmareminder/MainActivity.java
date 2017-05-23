@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
         loadPreferences();
 
         ton1 = (Button) findViewById(R.id.btnRegister);
@@ -46,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
             user = sp.getString("username","");
             pass = sp.getString("password","");
         }
+=======
+
+
+>>>>>>> master
     }
 
     public void Login (View v) {
@@ -61,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             //if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("admin"))
             if(username.equals(sp.getString("username","")) && password.equals(sp.getString("password","")))
             {
-                Intent intent = new Intent(v.getContext(), /*HomeActivity.class*/HomeActivity.class);
+                Intent intent = new Intent(v.getContext(), HomeActivity.class/*MapsActivity.class*/);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"login berhasil", Toast.LENGTH_LONG).show();
 //                Toast.makeText(getApplicationContext(), "Sundays value "+ Calendar.SATURDAY, Toast.LENGTH_SHORT).show();

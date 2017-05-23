@@ -30,10 +30,11 @@ public class GPSService extends Service{
     @Override
     public void onCreate() {
         listener=new LocationListener() {
+
             @Override
             public void onLocationChanged(Location location) {
-                Log.i("infoLocation",location.getLatitude()+","+location.getLongitude());
-                LatLng point=new LatLng(location.getLatitude(),location.getLongitude());
+                Log.i("Location Changed",location.getLatitude()+","+location.getLongitude());
+                Location point=location;
                 Intent i=new Intent("location_update");
                 i.putExtra("point",point);
                 sendBroadcast(i);
@@ -56,7 +57,7 @@ public class GPSService extends Service{
                 startActivity(intent);
             }
         };
-        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);Log.i("GPS Service","GPS Service Runnig");
 
 //        if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             //noinspection MissingPermission

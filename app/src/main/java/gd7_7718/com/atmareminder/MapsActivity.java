@@ -29,42 +29,20 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.sql.Time;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private LocationManager locationManager;
-    private LocationListener locationListener;
-    private LatLng point;
-    private BroadcastReceiver broadcastReceiver;
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (broadcastReceiver==null){
-            broadcastReceiver=new BroadcastReceiver() {
-                @Override
-                public void onReceive(Context context, Intent intent) {
-                    point = (LatLng) intent.getExtras().get("point");
-                    //Toast.makeText(MapsActivity.this, point.latitude+","+point.longitude, Toast.LENGTH_SHORT).show();
-                }
-            };
-        }
-        registerReceiver(broadcastReceiver,new IntentFilter("location_update"));
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        point=new LatLng(0,0);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
-        if(!runtime_permissions()) {
-            enableService();
-        }
     }
 
     /*private void configureButton(){
@@ -86,48 +64,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng current = new LatLng(point.latitude, point.longitude);
+        LatLng current = new LatLng(-7.778941, 110.415053);
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(current));
 
         if ((ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED))
-            mMap.setMyLocationEnabled(true);
+            mMap.setMyLocationEnabled(false);
 
-    }
-
-    private void enableService(){
-        Intent intent=new Intent(this,GPSService.class);
-        startService(intent);
-    }
-
-    private boolean runtime_permissions(){
-        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.M) {
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{
-                        Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.ACCESS_COARSE_LOCATION,
-                        Manifest.permission.INTERNET
-                },10);
-                return true;
-            }
-            return false;
-        }
-        return false;
-
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        switch(requestCode){
-            case 10:
-                if(grantResults.length>0 && grantResults[0]== PackageManager.PERMISSION_GRANTED)
-                    enableService();
-                else
-                    runtime_permissions();
-        }
-    }
-
-    public LatLng getCurrentLocation(){
-        return point;
     }
 }
