@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     public static final String myPref="mySharedPreferences";
     public static final String keyStatusGPSService="keyStatusGPSService";
+    private Button loc;
 
     @Override
     protected void onResume() {
@@ -52,6 +53,7 @@ public class HomeActivity extends AppCompatActivity {
 
         sharedPreferences=getSharedPreferences(myPref,Context.MODE_PRIVATE);
 
+        loc=(Button) findViewById(R.id.btnLocation);
         lg = (Button)findViewById(R.id.btnSchedule);
         set = (Button)findViewById(R.id.btnReminder);
         set.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +67,13 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), JadwalActivity.class);
+                startActivity(intent);
+            }
+        });
+        loc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
                 startActivity(intent);
             }
         });

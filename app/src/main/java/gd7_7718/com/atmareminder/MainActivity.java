@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
+//<<<<<<< HEAD
         loadPreferences();
 
         ton1 = (Button) findViewById(R.id.btnRegister);
@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
             user = sp.getString("username","");
             pass = sp.getString("password","");
         }
-=======
+//=======
 
 
->>>>>>> master
+//>>>>>>> master
     }
 
     public void Login (View v) {
