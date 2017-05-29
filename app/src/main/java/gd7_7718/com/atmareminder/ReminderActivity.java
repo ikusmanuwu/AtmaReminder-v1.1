@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import java.sql.Time;
 import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Random;
@@ -170,15 +171,16 @@ public class ReminderActivity extends AppCompatActivity {
                 String string = getJammulai();
                 String[] parts = string.split(":", 2);
                 String jam = parts[0]; // 004
-
                 String menit = parts[1]; // 034556-42
                 final int hour = Integer.parseInt(jam);
                 final int minute = Integer.parseInt(menit);
+
+
                 Log.e("MyActivity", "In the receiver with " + (hour-1) + " and " + minute);
                 setAlarmText("You clicked a " + hour + " and " + minute);
 
-//                calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getCurrentHour());
-//                calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute());
+//              calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getCurrentHour());
+//              calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute());
                 calendar.set(Calendar.MINUTE, minute);
                 calendar.set(Calendar.HOUR_OF_DAY,hour-1);
                 calendar.set(Calendar.DAY_OF_WEEK,day);
@@ -187,11 +189,11 @@ public class ReminderActivity extends AppCompatActivity {
                 pending_intent = PendingIntent.getBroadcast(ReminderActivity.this, 0, myIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
                 alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pending_intent);
-//                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),AlarmManager.INTERVAL_DAY,pending_intent);
+//              alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),AlarmManager.INTERVAL_DAY,pending_intent);
                 // now you should change the set Alarm text so it says something nice
 
 
-                setAlarmText("Alarm set to " + hour + ":" + minute);
+                setAlarmText("Alarm set to " + (hour-1) + ":" + minute);
                 //Toast.makeText(getApplicationContext(), "You set the alarm", Toast.LENGTH_SHORT).show();
             }
 
@@ -230,10 +232,8 @@ public class ReminderActivity extends AppCompatActivity {
         switch (day) {
             case Calendar.SUNDAY:
                 // Current day is Sunday
-
             case Calendar.MONDAY:
                 // Current day is Monday
-
             case Calendar.TUESDAY:
                 // etc.
             case Calendar.WEDNESDAY:
@@ -245,8 +245,13 @@ public class ReminderActivity extends AppCompatActivity {
 
         dbHelper = new DataHelper(this);
 
+        Calendar c = Calendar.getInstance();
+
+        c.get(Calendar.HOUR_OF_DAY);
+        c.get(Calendar.MINUTE);
+
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT  * FROM jadwal WHERE idhari = " + day,null);
+        cursor = db.rawQuery("SELECT  * FROM jadwal WHERE idhari = " + day + " AND CAST(jammulai AS TIME) > CAST("+c.HOUR_OF_DAY+"."+c.MINUTE+" AS TIME);",null);
 
         while (cursor.moveToNext()){
 
