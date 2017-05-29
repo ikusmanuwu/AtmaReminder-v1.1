@@ -23,7 +23,7 @@ import android.widget.Button;
  */
 
 public class HomeActivity extends AppCompatActivity {
-    Button lg,set;
+    Button lg,set,maps;
     private Location point,kampus3;
     private BroadcastReceiver broadcastReceiver;
     private SharedPreferences sharedPreferences;
@@ -54,6 +54,7 @@ public class HomeActivity extends AppCompatActivity {
 
         lg = (Button)findViewById(R.id.btnSchedule);
         set = (Button)findViewById(R.id.btnReminder);
+        maps = (Button)findViewById(R.id.btnMaps);
         set.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +66,14 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), JadwalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        maps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
                 startActivity(intent);
             }
         });
