@@ -4,6 +4,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,8 +29,9 @@ public class LihatJadwal extends AppCompatActivity {
         text5 = (TextView) findViewById(R.id.textView5);
         text6 = (TextView) findViewById(R.id.textView6);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM jadwal WHERE hari = '" +
-                getIntent().getStringExtra("hari") + "'",null);
+        cursor = db.rawQuery("SELECT * FROM jadwal WHERE _id = " +
+                getIntent().getIntExtra("id",-1),null);
+        Log.i("cekID",""+getIntent().getIntExtra("id",-1));
         cursor.moveToFirst();
         if (cursor.getCount()>0)
         {

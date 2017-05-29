@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
         android:text="MyLocation" />
-=======
+    <Button
         android:id="@+id/btnMaps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,6 +47,6 @@
         android:layout_centerHorizontal="false"
         android:layout_gravity="center_vertical|center_horizontal"
         android:text="Map" />
->>>>>>> fffff03777c2169751235316a973846f748ad0a3
+
 
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,8 +16,16 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
+import gd7_7718.com.atmareminder.Entity.JadwalEntity;
+
 public class JadwalActivity extends AppCompatActivity {
-    String[] daftar;
+    ArrayList<JadwalEntity> daftar;
+    ArrayList<String> daftarNama;
     ListView ListView01;
     Menu menu;
     protected Cursor cursor;
@@ -43,26 +52,47 @@ public class JadwalActivity extends AppCompatActivity {
 
         ma = this;
         dbcenter = new DataHelper(this);
-        RefreshList();
+        try {
+            RefreshList();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void RefreshList(){
+    public void RefreshList() throws ParseException {
         SQLiteDatabase db = dbcenter.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM jadwal",null);
-        daftar = new String[cursor.getCount()];
+        daftar = new ArrayList<>();
+        daftarNama = new ArrayList<>();
         cursor.moveToFirst();
         for (int cc=0; cc < cursor.getCount(); cc++){
+            JadwalEntity temp=new JadwalEntity();
+
+            SimpleDateFormat parser = new SimpleDateFormat("HH:mm:ss");
+            Date mulai=parser.parse(cursor.getString(cursor.getColumnIndex("jammulai")));
+            Date selesai=parser.parse(cursor.getString(cursor.getColumnIndex("jamselesai")));
+
             cursor.moveToPosition(cc);
-            daftar[cc] = cursor.getString(1).toString();
+            temp.setId(cursor.getInt(cursor.getColumnIndex("_id")));
+            temp.setIdhari(cursor.getInt(cursor.getColumnIndex("idhari")));
+            temp.setRuangan(cursor.getString(cursor.getColumnIndex("ruangan")));
+            temp.setMakul(cursor.getString(cursor.getColumnIndex("makul")));
+            temp.setJam_mulai(mulai);
+            temp.setJam_selesai(selesai);
+            temp.setHari(cursor.getString(cursor.getColumnIndex("hari")));
+
+            daftar.add(temp);
+            daftarNama.add(temp.getHari()+" | "+cursor.getString(cursor.getColumnIndex("jammulai"))+"-"+cursor.getString(cursor.getColumnIndex("jamselesai")));
         }
+
         ListView01 = (ListView)findViewById(R.id.listView1);
-        ListView01.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftar));
+        ListView01.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftarNama));
         ListView01.setSelected(true);
         ListView01.setOnItemClickListener(new OnItemClickListener() {
 
 
             public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
-                final String selection = daftar[arg2]; //.getItemAtPosition(arg2).toString();
+                final int selection = daftar.get(arg2).getId();
                 final CharSequence[] dialogitem = {"Lihat Jadwal", "Update Jadwal", "Hapus Jadwal"};
                 AlertDialog.Builder builder = new AlertDialog.Builder(JadwalActivity.this);
                 builder.setTitle("Pilihan");
@@ -71,18 +101,23 @@ public class JadwalActivity extends AppCompatActivity {
                         switch(item){
                             case 0 :
                                 Intent i = new Intent(getApplicationContext(), LihatJadwal.class);
-                                i.putExtra("hari", selection);
+                                i.putExtra("id", selection);
+                                Log.i("cekID",""+selection);
                                 startActivity(i);
                                 break;
                             case 1 :
                                 Intent in = new Intent(getApplicationContext(), UpdateJadwal.class);
-                                in.putExtra("hari", selection);
+                                in.putExtra("id", selection);
                                 startActivity(in);
                                 break;
                             case 2 :
                                 SQLiteDatabase db = dbcenter.getWritableDatabase();
-                                db.execSQL("delete from jadwal where hari = '"+selection+"'");
-                                RefreshList();
+                                db.execSQL("delete from jadwal where _id = "+selection+"");
+                                try {
+                                    RefreshList();
+                                } catch (ParseException e) {
+                                    e.printStackTrace();
+                                }
                                 break;
                         }
                     }
