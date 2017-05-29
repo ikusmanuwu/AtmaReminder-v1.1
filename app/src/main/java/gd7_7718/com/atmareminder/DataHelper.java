@@ -31,4 +31,12 @@ public class DataHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
         // TODO Auto-generated method stub
     }
+    public int getLastID()
+    {
+        String sql = "select last_insert_rowid() from jadwal ;";
+        Log.d("getID",sql+"");
+        int temp = Integer.parseInt(sql);
+        return  temp;
+    }
+
 }

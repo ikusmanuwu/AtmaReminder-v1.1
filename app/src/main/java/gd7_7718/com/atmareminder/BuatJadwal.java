@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -22,6 +23,7 @@ public class BuatJadwal extends AppCompatActivity {
     private String hari = "";
     DataHelper dbHelper;
     Button ton1, ton2;
+    TextView textID;
     EditText text1, text3, text4, text5,text6;
 
     @Override
@@ -33,6 +35,8 @@ public class BuatJadwal extends AppCompatActivity {
         setForm();
 
         dbHelper = new DataHelper(this);
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+
         text1 = (EditText) findViewById(R.id.txtNama);
         text2 = (Spinner) findViewById(R.id.txtUser);
         text3 = (EditText) findViewById(R.id.txtPass);
@@ -41,8 +45,8 @@ public class BuatJadwal extends AppCompatActivity {
         text6 = (EditText) findViewById(R.id.editText6);
         ton1 = (Button) findViewById(R.id.button1);
         ton2 = (Button) findViewById(R.id.btnKembali);
-
-
+        textID = (TextView) findViewById(R.id.textViewID);
+        textID.setText(dbHelper.getLastID());
 
         ton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +63,7 @@ public class BuatJadwal extends AppCompatActivity {
                 }
                 SQLiteDatabase db = dbHelper.getWritableDatabase();
                 db.execSQL("insert into jadwal(no, hari, jammulai, jamselesai, makul, ruangan,idhari) values('" +
-                        text1.getText().toString() + "','" +
+                        textID.toString() + "','" +
                         text2.getSelectedItem().toString() + "','" +
                         text3.getText().toString() + "','" +
                         text4.getText().toString() + "','" +
