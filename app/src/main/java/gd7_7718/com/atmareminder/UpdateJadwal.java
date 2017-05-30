@@ -65,7 +65,7 @@ public class UpdateJadwal extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
 
-                long idhaaa;
+                long idhaaa=0;
                 if (text2.getSelectedItem().toString().equalsIgnoreCase("Senin")) {
                     idhaaa = 2;
                 } else if (text2.getSelectedItem().toString().equalsIgnoreCase("Selasa")) {
@@ -91,7 +91,7 @@ public class UpdateJadwal extends AppCompatActivity {
                         text3.getText().toString() + "', jamselesai='" +
                         text4.getText().toString() + "', makul='" +
                         text5.getText().toString() + "', ruangan='" +
-                        text6.getText().toString() + "' where _id=" +
+                        text6.getText().toString() + "',idhari="+idhaaa+" where _id=" +
                         getIntent().getIntExtra("id", -1));
                 Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_LONG).show();
                 try {

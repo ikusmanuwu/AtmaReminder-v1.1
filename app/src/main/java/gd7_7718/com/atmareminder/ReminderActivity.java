@@ -11,6 +11,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -25,7 +26,9 @@ import android.widget.Toast;
 
 import java.sql.Time;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 
 /**
@@ -49,7 +52,7 @@ public class ReminderActivity extends AppCompatActivity {
     SharedPreferences.Editor editor;
     public static final String myPref="mySharedPreferences";
     public static final String keyStatusGPSService="keyStatusGPSService";
-
+    int iii=1;
     ReminderActivity inst;
     Context context;
 
@@ -70,6 +73,7 @@ public class ReminderActivity extends AppCompatActivity {
 //        });
         sharedPreferences=getSharedPreferences(myPref,Context.MODE_PRIVATE);
         editor=sharedPreferences.edit();
+        final AlertDialog.Builder adb = new AlertDialog.Builder(this);
 
         switchDest=(Switch) findViewById(R.id.switchDistance);
         switchDest.setChecked(sharedPreferences.getBoolean(keyStatusGPSService,false));
@@ -168,33 +172,88 @@ public class ReminderActivity extends AppCompatActivity {
 //                final int hour = alarmTimePicker.getCurrentHour();
 //                final int minute = alarmTimePicker.getCurrentMinute();
 
-                String string = getJammulai();
-                String[] parts = string.split(":", 2);
-                String jam = parts[0]; // 004
-                String menit = parts[1]; // 034556-42
-                final int hour = Integer.parseInt(jam);
-                final int minute = Integer.parseInt(menit);
+                String string = null;
+                try {
+                    string = getJammulai();
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                if(string.equalsIgnoreCase("Tidak ditemukan"))
+                {
+                    //Rabu
+                    //Toast.makeText(getApplicationContext(), "MAAF UNTUK HARI INI TIDAK ADA JADWAL ", Toast.LENGTH_LONG).show();
+                    try {
+                        string = getJammulaiNext();
+                        if(string.equalsIgnoreCase("Tidak ditemukan"))
+                        {
+                            //Kamis
+                            string=getJammulaiNext();
+                            if(string.equalsIgnoreCase("Tidak ditemukan"))
+                            {
+                                //Jumat
+                                string=getJammulaiNext();
+                                if(string.equalsIgnoreCase("Tidak ditemukan"))
+                                {
+                                    //Sabtu
+                                    string=getJammulaiNext();
+                                    if(string.equalsIgnoreCase("Tidak ditemukan"))
+                                    {
+                                        //Minggu
+                                        string=getJammulaiNext();
+                                        if(string.equalsIgnoreCase("Tidak ditemukan"))
+                                        {
+                                            //Exception
+                                            AlertDialog ad = adb.create();
+                                            ad.setMessage("Data Kosong");
+                                            ad.show();
+                                            //Toast.makeText(getApplicationContext(), "MAAF TIDAK ADA JADWAL ", Toast.LENGTH_LONG).show();
+//                                            string=getJammulaiNext();
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    } catch (ParseException e) {
+                        AlertDialog ad = adb.create();
+                        ad.setMessage("Data Kosong Untuk Jadwal Berikutnya");
+                        ad.show();
+                        e.printStackTrace();
+                    }
+                }
+//                else {
+                    Log.i("Tesget", "Split " + string + " ");
+                    String[] parts = string.split(":", 3);
+                    String jam = parts[0]; // 004
+                    String menit = parts[1]; // 034556-42
+                    String detik = parts[2];
+                    Log.i("Tesget", "Split " + string + " " + jam + " " + menit + " " + detik);
+                    final int hour = Integer.parseInt(jam);
+                    final int minute = Integer.parseInt(menit);
+                    final int seconds = Integer.parseInt(detik);
 
 
-                Log.e("MyActivity", "In the receiver with " + (hour-1) + " and " + minute);
-                setAlarmText("You clicked a " + hour + " and " + minute);
+                    Log.e("MyActivity", "In the receiver with " + (hour - 1) + " and " + minute);
+                    setAlarmText("You clicked a " + hour + " and " + minute);
 
 //              calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getCurrentHour());
 //              calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute());
-                calendar.set(Calendar.MINUTE, minute);
-                calendar.set(Calendar.HOUR_OF_DAY,hour-1);
-                calendar.set(Calendar.DAY_OF_WEEK,day);
+                    calendar.set(Calendar.MINUTE, minute);
+                    calendar.set(Calendar.HOUR_OF_DAY, hour - 1);
+                    calendar.set(Calendar.SECOND, seconds);
+                    calendar.set(Calendar.DAY_OF_WEEK, day);
 
-                myIntent.putExtra("extra", "yes");
-                pending_intent = PendingIntent.getBroadcast(ReminderActivity.this, 0, myIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+                    myIntent.putExtra("extra", "yes");
+                    pending_intent = PendingIntent.getBroadcast(ReminderActivity.this, 0, myIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-                alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pending_intent);
+                    alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pending_intent);
 //              alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),AlarmManager.INTERVAL_DAY,pending_intent);
-                // now you should change the set Alarm text so it says something nice
+                    // now you should change the set Alarm text so it says something nice
 
 
-                setAlarmText("Alarm set to " + (hour-1) + ":" + minute);
-                //Toast.makeText(getApplicationContext(), "You set the alarm", Toast.LENGTH_SHORT).show();
+                    setAlarmText("Alarm set to " + (hour - 1) + ":" + minute);
+                    //Toast.makeText(getApplicationContext(), "You set the alarm", Toast.LENGTH_SHORT).show();
+//                }
             }
 
         });
@@ -223,11 +282,12 @@ public class ReminderActivity extends AppCompatActivity {
 
     }
 
-    public String getJammulai(){
+    public String getJammulai() throws ParseException {
 
         final Calendar calendar = Calendar.getInstance();
 
         final int day = calendar.get(Calendar.DAY_OF_WEEK);
+        Log.i("cekDay",day+"");
 
         switch (day) {
             case Calendar.SUNDAY:
@@ -246,22 +306,124 @@ public class ReminderActivity extends AppCompatActivity {
         dbHelper = new DataHelper(this);
 
         Calendar c = Calendar.getInstance();
-
+//        c.add(Calendar.HOUR_OF_DAY, 1);//
         c.get(Calendar.HOUR_OF_DAY);
         c.get(Calendar.MINUTE);
 
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("SELECT  * FROM jadwal WHERE idhari = " + day + " AND CAST(jammulai AS TIME) > CAST("+c.HOUR_OF_DAY+"."+c.MINUTE+" AS TIME);",null);
+        cursor = db.rawQuery("SELECT  * FROM jadwal WHERE idhari = " + day + " AND jammulai > "+c.HOUR_OF_DAY+""+c.MINUTE+""+c.SECOND+" ;",null);
+//        cursor = db.rawQuery("SELECT  * FROM jadwal WHERE idhari = " + day + ";",null);
+        Log.i("Tesget","JAM MENIT "+c.get(Calendar.HOUR_OF_DAY)+" "+c.get(Calendar.MINUTE)+"");
+//        cursor.moveToFirst();
+//        if (cursor.getCount()>0)
+//        {
+//            cursor.moveToPosition(0);
+//            Log.i("Tesget",cursor.getString(0).toString());
+//            Log.i("Tesget",cursor.getString(1).toString());
+//            Log.i("Tesget",cursor.getString(2).toString());
+//            Log.i("Tesget",cursor.getString(3).toString());
+//            Log.i("Tesget",cursor.getString(4).toString());
+//            Log.i("Tesget",cursor.getString(5).toString());
+//            Log.i("Tesget",cursor.getString(6).toString());
+//
+//        }
 
+
+//        c.add(Calendar.HOUR_OF_DAY, 1);//
         while (cursor.moveToNext()){
+            String temp = cursor.getString(cursor.getColumnIndex("jammulai"));
+            String[] parts = temp.split(":", 3);
+            String jam = parts[0]; // 004
+            String menit = parts[1]; // 034556-42
+            String detik = parts[2];
+            int hour1 = Integer.parseInt(jam);
+            int minutes1 = Integer.parseInt(menit);
+            int jamskr = c.get(Calendar.HOUR_OF_DAY);
+            int menitskr=c.get(Calendar.MINUTE);
+            String tempjam= jam+":"+menit;
+            String tempjamskr=(hour1-1)+":"+minutes1;
+            Log.i("Tesget","Return jam : "+(hour1-1)+" menit :"+minutes1);//
+            SimpleDateFormat format = new SimpleDateFormat("HH:mm");
+            Date date1 = format.parse(tempjam);
+            Date date2 = format.parse(tempjamskr);
+            //Log.i("Tesget","Return jam : "+(hour1-1)+" menit :"+minutes1);
+            if (cursor.getInt(cursor.getColumnIndex("idhari"))== day && (hour1-1)>=jamskr  && minutes1>menitskr)
 
-            if (cursor.getInt(cursor.getColumnIndex("idhari"))== day)
             return cursor.getString(cursor.getColumnIndex("jammulai"));
-
+//            Log.i("Tesget","Return jam :"+hour1+" ");
         }
         return "Tidak ditemukan";
 
     }
+
+
+    public String getJammulaiNext() throws ParseException {
+
+        final Calendar c = Calendar.getInstance();
+        int nextday = c.get(Calendar.DAY_OF_WEEK);
+        nextday = nextday+iii;
+//        Log.i("cekDay",day+"");
+
+        switch (nextday) {
+            case Calendar.SUNDAY:
+                // Current day is Sunday
+            case Calendar.MONDAY:
+                // Current day is Monday
+            case Calendar.TUESDAY:
+                // etc.
+            case Calendar.WEDNESDAY:
+            case Calendar.THURSDAY:
+            case Calendar.FRIDAY:
+            case Calendar.SATURDAY:
+        }
+
+
+        dbHelper = new DataHelper(this);
+
+        Calendar ca = Calendar.getInstance();
+//        c.add(Calendar.HOUR_OF_DAY, 1);//
+        ca.get(Calendar.HOUR_OF_DAY);
+        ca.get(Calendar.MINUTE);
+
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        cursor = db.rawQuery("SELECT  * FROM jadwal WHERE idhari = " + nextday + " AND jammulai > "+ca.HOUR_OF_DAY+""+ca.MINUTE+""+ca.SECOND+" ;",null);
+//        cursor = db.rawQuery("SELECT  * FROM jadwal WHERE idhari = " + day + ";",null);
+        Log.i("Tesget","JAM MENIT "+c.get(Calendar.HOUR_OF_DAY)+" "+c.get(Calendar.MINUTE)+"");
+//
+
+//
+        while (cursor.moveToNext()){
+            String temp = cursor.getString(cursor.getColumnIndex("jammulai"));
+            String[] parts = temp.split(":", 3);
+            String jam = parts[0]; // 004
+            String menit = parts[1]; // 034556-42
+            String detik = parts[2];
+            int hour1 = Integer.parseInt(jam);
+            int minutes1 = Integer.parseInt(menit);
+            int jamskr = ca.get(Calendar.HOUR_OF_DAY);
+            int menitskr=ca.get(Calendar.MINUTE);
+            String tempjam= jam+":"+menit;
+            String tempjamskr=(hour1-1)+":"+minutes1;
+            Log.i("Tesget","Return jam : "+(hour1-1)+" menit :"+minutes1);//
+            SimpleDateFormat format = new SimpleDateFormat("HH:mm");
+            Date date1 = format.parse(tempjam);
+            Date date2 = format.parse(tempjamskr);
+            long millis = date2.getTime() - date1.getTime();
+
+
+            //if (cursor.getInt(cursor.getColumnIndex("idhari"))== nextday && (hour1-1)>=jamskr  && minutes1>menitskr)
+            if (cursor.getInt(cursor.getColumnIndex("idhari"))== nextday && (date1.getTime()-date2.getTime()>=0))
+            //date2.getTime() - date1.getTime()
+                return cursor.getString(cursor.getColumnIndex("jammulai"));
+//            Log.i("Tesget","Return jam :"+hour1+" ");
+        }
+        iii++;
+        return "Tidak ditemukan";
+
+    }
+
+
+
 
 
     public void setAlarmText(String alarmText) {

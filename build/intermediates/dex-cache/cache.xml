@@ -3,12 +3,84 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\fransiscus\.android\build-cache\4b57efa9a8670f77428007e6b07d0e2554329bff\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3a3d62fab67ccb83f386a4c092bfb5747ea15a7">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1ab5f43a34d4401273fc00a41c9eec3559476d98\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fransiscus\.android\build-cache\8e30cc3ef36aca9f6ec4714d8996ae194f02c6a2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6924ef2127a1fb106d13d701c25b2688223c0fad">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4ce649a09f52c4b27ecb4a14a6220d6318152114\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fransiscus\.android\build-cache\372c4631f9bcfe294e4be43df7f2542874990fb6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="49223278ec2ede1d05d00868c5ce3e077b4016f8">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e63010106d54b4f9c89c12e4c082976ba36d4762\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fransiscus\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_7797cfa8f9352c2a473fa9c8697c817bd640ef69\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fransiscus\.android\build-cache\feeb57959f276469d799a6b46d838719694231a8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_791b57e758d97fd563b38e54e71ac906408f144a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4170daa82651fcf2525e013dfa05ceb9970689b3">
+        sha1="22d400752fdd96949e84bc3aa683a85fdef33354">
         <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_085a4ab330d5feb22cf12ffde18558fbc3844899\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fransiscus\.android\build-cache\4ec9ebf975282389f73461eed4c8cf891a9e042f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5660e4bf78904137e90e62a5d4cc2e987258f02c">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_72186ac243fdaacee9ab7e0be9234b093f40a65f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fransiscus\.android\build-cache\aecc0bf39928934964ee3a631b0a670ce08fb475\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09d89c0a8e2ba8d2fd5e7110d62bc6916d642567">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7d3ff9493cdf262fe355ec9668e6d1e45fa6fcf6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fransiscus\.android\build-cache\df21e88beb24e8772f8d6e12f517889b5e3af79c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cd06a9b91c9ff44c4011f7d413fe4c7193acf154\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +90,15 @@
         revision="25.0.0"
         sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
         <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2f4cf0e5927760545c51715494f7caa075d5e9c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fransiscus\.android\build-cache\27495ee2a56ce3707930eb22d69fefb065f8b461\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="acf66033b1418ccf9e15c8e77750981e4809c4ea">
+        <dex dex="E:\KULIAH\Semester 6\TECHNO\AtmaReminder-v1.1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0f27000bc27a5183f3f1d7cd2c34d5a434979496\classes.dex" />
     </item>
 
 </items>

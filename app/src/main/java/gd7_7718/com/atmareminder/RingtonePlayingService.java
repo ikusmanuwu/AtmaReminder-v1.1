@@ -39,7 +39,7 @@ public class RingtonePlayingService extends Service {
         final NotificationManager mNM = (NotificationManager)
                 getSystemService(NOTIFICATION_SERVICE);
 
-        Intent intent1 = new Intent(this.getApplicationContext(), MainActivity.class);
+        Intent intent1 = new Intent(this.getApplicationContext(), ReminderActivity.class);
         PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent1, 0);
 
         Notification mNotify  = new Notification.Builder(this)
