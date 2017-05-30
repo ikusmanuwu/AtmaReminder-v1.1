@@ -209,15 +209,16 @@ public class ReminderActivity extends AppCompatActivity {
                                             //Toast.makeText(getApplicationContext(), "MAAF TIDAK ADA JADWAL ", Toast.LENGTH_LONG).show();
 //                                            string=getJammulaiNext();
                                         }
+
+
+
                                     }
 
                                 }
                             }
                         }
                     } catch (ParseException e) {
-                        AlertDialog ad = adb.create();
-                        ad.setMessage("Data Kosong Untuk Jadwal Berikutnya");
-                        ad.show();
+
                         e.printStackTrace();
                     }
                 }
@@ -253,8 +254,8 @@ public class ReminderActivity extends AppCompatActivity {
 
                     setAlarmText("Alarm set to " + (hour - 1) + ":" + minute);
                     //Toast.makeText(getApplicationContext(), "You set the alarm", Toast.LENGTH_SHORT).show();
-//                }
-            }
+                }
+//            }
 
         });
 

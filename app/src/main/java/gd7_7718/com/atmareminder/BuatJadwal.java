@@ -54,7 +54,7 @@ public class BuatJadwal extends AppCompatActivity {
         ton1 = (Button) findViewById(R.id.button1);
         ton2 = (Button) findViewById(R.id.btnKembali);
         textID = (TextView) findViewById(R.id.textViewID);
-        //textID.setText(dbHelper.getLastID());
+//        textID.setText();
         //Log.d("Cek ID",textID.getText()+"");
 
         ton1.setOnClickListener(new View.OnClickListener() {

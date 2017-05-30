@@ -25,7 +25,7 @@
 
     <Button
         android:id="@+id/btnReminder"
-        android:layout_width="wrap_content"
+        android:layout_width="156dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnSchedule"
         android:layout_centerHorizontal="false"
@@ -35,13 +35,14 @@
     <Button
 
         android:id="@+id/btnLocation"
-        android:layout_width="wrap_content"
+        android:layout_width="156dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
         android:text="MyLocation" />
+
     <Button
         android:id="@+id/btnMaps"
-        android:layout_width="wrap_content"
+        android:layout_width="156dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnReminder"
         android:layout_centerHorizontal="false"

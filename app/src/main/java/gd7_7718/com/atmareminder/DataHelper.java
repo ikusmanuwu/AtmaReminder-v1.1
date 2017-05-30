@@ -41,6 +41,7 @@ public class DataHelper extends SQLiteOpenHelper {
     public static String Column_Name_makul="makul";
     public static String Column_Name_ruangan="ruangan";
     public static String Column_Name_idhari="idhari";
+//    public static String Column_Name_
 
     SQLiteDatabase sqliteDB;
 

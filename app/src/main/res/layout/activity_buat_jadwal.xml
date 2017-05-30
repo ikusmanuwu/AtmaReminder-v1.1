@@ -12,9 +12,11 @@
         android:id="@+id/textViewID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Nomor">
+        android:text="ID"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:visibility="invisible">
 
 
     </TextView>
@@ -23,18 +25,19 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:text="Nomor"
         android:layout_alignParentTop="true"
-        android:text="Nomor" />
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtNama"
-        android:layout_below="@+id/txtNama"
+        android:text="Hari"
         android:layout_marginTop="10dp"
-        android:text="Hari" />
+        android:layout_below="@+id/textViewID"
+        android:layout_alignParentStart="true" />
 
     <Spinner
         android:id="@+id/txtUser"
@@ -113,6 +116,26 @@
         android:layout_below="@+id/textView6"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNama"
+        android:layout_below="@+id/editText6"
+        android:layout_marginTop="10dp"
+        android:text="Alamat Kampus"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/txtUser2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView56"
+        android:layout_marginRight="100dp"
+        android:paddingLeft="50dp"
+        android:visibility="invisible"/>
+
 
     <Button
         android:id="@+id/button1"
@@ -133,5 +156,14 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="22dp" />
+
+    <Button
+        android:id="@+id/buttonBaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView56"
+        android:text="Baru"
+        android:visibility="invisible"/>
 
 </RelativeLayout>
